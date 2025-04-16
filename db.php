@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 <?php
 $servername = "sql12.freesqldatabase.com";
 $username = "sql12773489";
-$password = "YOUR_PASSWORD";  // Replace this with the password from your email
+$password = "your_real_password_here";  // ← Put actual password here
 $dbname = "sql12773489";
 
 // Create connection
@@ -29,4 +29,5 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+
 
