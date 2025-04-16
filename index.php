@@ -2,13 +2,11 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-?>
 
+// Start session at the very top
+session_start();
 
-<?php
-session_start();    
 include 'db.php';
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $enrollmentno = $_POST['enroll_no'];
@@ -43,11 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,7 +114,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="content">
@@ -131,16 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button type="submit">Submit</button>
                 </form>
             </div>
-
-
         </div>
     </div>
-    </div>
-
-    <script>
-
-    </script>
-
 </body>
-
 </html>
