@@ -16,18 +16,20 @@ if ($conn->connect_error) {
 
 
 <?php
-$servername = "sql12.freesqldatabase.com";
-$username = "sql12773489";
-$password = "your_real_password_here";  // ← Put actual password here
-$dbname = "sql12773489";
+$servername = "sql12.freesqldatabase.com";  // Host
+$username = "sql12773489";                  // Database user
+$password = "HTRRvf5s5Z";                   // Database password
+$dbname = "sql12773489";                    // Database name
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, 3306);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+echo "Connected successfully";
 ?>
+
 
 
